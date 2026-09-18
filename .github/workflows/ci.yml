@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      # actions/checkout v5.1.0; tag verified from the upstream repository on 2026-09-18.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - name: Verify Swift Testing toolchain
+        shell: bash
+        run: |
+          xcodebuild -version
+          swift --version
+          swift_bin="$(xcrun --find swift)"
+          testing_plugin="$(dirname "$(dirname "$swift_bin")")/lib/swift/host/plugins/testing/libTestingMacros.dylib"
+          test -f "$testing_plugin"
+      - name: Check public-release allowlist
+        run: python3 -m unittest discover -s Tests/ReleaseTests -v
+      - name: Run tests
+        run: ./scripts/test.sh
+      - name: Build app
+        run: ./scripts/build-app.sh

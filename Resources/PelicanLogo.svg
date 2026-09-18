@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="360" viewBox="100 66 440 360" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican Sentinel — pelican riding a bicycle</title>
+  <desc id="desc">A cheerful white pelican with a long orange bill pedals a teal bicycle.</desc>
+  <g stroke="#253c46" fill="none">
+    <g stroke-width="7">
+      <circle cx="190" cy="337" r="77" />
+      <circle cx="447" cy="337" r="77" />
+    </g>
+    <g stroke="#afbdba" stroke-width="2">
+      <path d="M190 263v148m-74-74h148m-126-52 104 104m-104 0 104-104" />
+      <path d="M447 263v148m-74-74h148m-126-52 104 104m-104 0 104-104" />
+    </g>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M190 337 270 253 314 337Z              M270 253H410L314 337              M410 253 447 337              M270 253 263 234" stroke="#178e91" stroke-width="9" />
+    <path d="M410 253 399 219 423 209" stroke="#253c46" stroke-width="7" />
+    <path d="M414 210h17M244 234h41" stroke="#253c46" stroke-width="10" />
+    <path d="M190 337h124" stroke="#718984" stroke-width="3" />
+  </g>
+  <path d="M282 219 263 277 290 321" fill="none" stroke="#d88b31" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="m288 314 22 13-32 4Z" fill="#eaa03e" stroke="#253c46" stroke-width="3" />
+  <path d="m250 194-43-23 12 37 37 13" fill="#e1e7e4" stroke="#253c46" stroke-width="4" stroke-linejoin="round" />
+  <path d="M242 170            C214 205 242 242 287 243            C333 244 353 217 350 183            C348 163 337 151 344 134            C353 117 379 122 383 105            C388 86 374 75 356 78            C326 82 308 114 310 148            C287 140 260 146 242 170Z" fill="#fffef7" stroke="#253c46" stroke-width="4" />
+  <path d="M370 110 495 123            C467 143 429 165 394 149            L365 126Z" fill="#f7bb58" stroke="#253c46" stroke-width="4" stroke-linejoin="round" />
+  <path d="m370 109 125 14-127 7" fill="#ef9638" stroke="#253c46" stroke-width="4" stroke-linejoin="round" />
+  <circle cx="359" cy="101" r="5" fill="#253c46" />
+  <circle cx="360.5" cy="99.5" r="1.5" fill="white" />
+  <path d="M265 165            C293 157 316 177 335 191            L402 214            Q410 222 399 228            L324 213            C300 211 277 200 266 188" fill="#e6ece8" stroke="#253c46" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="m288 181 39 20 54 15" fill="none" stroke="#a7b9b4" stroke-width="3" stroke-linecap="round" />
+  <path d="M304 234 329 274 315 312" fill="none" stroke="#efa13d" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="m313 306 31 15-3 7-40-4Z" fill="#ffb64e" stroke="#253c46" stroke-width="3" stroke-linejoin="round" />
+  <g stroke="#253c46" stroke-linecap="round">
+    <circle cx="314" cy="337" r="11" fill="#f5f1e7" stroke-width="4" />
+    <path d="m314 337 17-12m-17 12-18 18" stroke-width="5" />
+    <path d="M320 326h25m-60 30h22" stroke-width="6" />
+  </g>
+</svg>

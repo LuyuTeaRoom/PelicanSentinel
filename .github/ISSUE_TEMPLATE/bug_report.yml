@@ -1,0 +1,102 @@
+name: Bug report
+description: 报告可复现的行为问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢报告问题。请先移除凭据、用户历史、原始模型响应和机器私有路径。安全问题请阅读 `SECURITY.md`，不要在此表单公开漏洞细节。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题摘要
+      description: 用一句话说明发生了什么。
+      placeholder: 例如：恢复预览后菜单仍显示旧图片。
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version / build
+      description: 填写应用版本和 build；如果从源码运行，请填写当前 checkout 可识别的版本。
+      placeholder: 例如：0.2.3 (8)
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: 请填写 macOS 版本、机型；如涉及构建或测试，再填写 Swift 工具链版本。
+      placeholder: |
+        macOS:
+        Hardware:
+        Swift (if relevant):
+    validations:
+      required: true
+
+  - type: input
+    id: provider_model
+    attributes:
+      label: Provider / model
+      description: 填写涉及的 provider 和 model；不适用时填 N/A。
+      placeholder: 例如：Codex / gpt-6-astra
+    validations:
+      required: true
+
+  - type: input
+    id: cli_version
+    attributes:
+      label: CLI version
+      description: 仅在涉及 Codex 或其他 CLI 时填写；否则填 N/A。
+      placeholder: 例如：codex-cli 0.153.4 或 N/A
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 按顺序列出最小、可重复的步骤和输入条件。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+      description: 说明你认为应用应当如何表现。
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 说明实际结果、错误提示和影响范围。
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏日志或截图
+      description: 仅粘贴已移除凭据、用户历史、原始模型响应和机器私有路径的最小内容；没有则填 N/A。
+      render: shell
+      placeholder: N/A
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已确认本报告不包含 API key、登录信息、Keychain 内容、用户历史、原始模型响应或其他秘密。
+          required: true
