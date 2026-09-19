@@ -32,7 +32,7 @@ python3 -m unittest discover -s Tests/ReleaseTests -v
 
 本次准备验收没有调用真实模型。密钥扫描通过表示没有规则命中，不是对所有潜在秘密的绝对保证。
 
-CI 配置使用 `macos-15` 与 Xcode 16.4，固定 checkout action 的提交；默认不使用生成密钥、不调用模型。其工具链与本机 Apple Swift 6.4 不同，只有 GitHub 实际运行才能确认该环境的结果。
+CI 配置使用 `macos-15` 与 Xcode 16.4，固定 checkout action 的提交；默认不使用生成密钥、不调用模型。2026-09-19 首次托管运行发现 OpenAI 解析表达式在该工具链下类型推断超时，现已将其拆分为明确的中间变量。托管运行的实际结果、工具链和日志见 [GitHub Actions](https://github.com/LuyuTeaRoom/PelicanSentinel/actions/workflows/ci.yml)；请按对应提交查看，不以本机结果替代。
 
 ## 真实连接的验证边界
 
@@ -44,7 +44,6 @@ CI 配置使用 `macos-15` 与 Xcode 16.4，固定 checkout action 的提交；�
 
 ## 尚需实机或账号环境的检查
 
-- GitHub Actions：本地配置检查和本机测试不能表述为 GitHub runner 已通过；需推送仓库后查看实际运行。
 - 通知送达、登录后启动、真实睡眠/唤醒，以及不同 macOS/Intel 环境。
 - 菜单与设置的完整鼠标交互。原生视图渲染和动作逻辑测试不等于完整桌面点击验收。
 - Developer ID 签名、公证与首次安装流程；当前只承诺源码构建。

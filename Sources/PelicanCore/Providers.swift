@@ -399,11 +399,12 @@ public final class OpenAIProvider: ModelProvider, @unchecked Sendable {
             )
         }
 
-        let content = decoded.output?
-            .filter { $0.type == "message" && $0.role == "assistant" }
-            .flatMap({ $0.content ?? [] })
-            .compactMap { $0.type == "output_text" ? $0.text : nil }
-            .joined() ?? ""
+        let messages = (decoded.output ?? []).filter {
+            $0.type == "message" && $0.role == "assistant"
+        }
+        let parts: [ResponsesResponse.Content] = messages.flatMap { $0.content ?? [] }
+        let texts: [String] = parts.compactMap { $0.type == "output_text" ? $0.text : nil }
+        let content = texts.joined()
         guard !content.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw ProviderFailure(
                 type: "empty_response",

@@ -4,7 +4,7 @@ Pelican Sentinel 将 API 密钥保存到 macOS Keychain，并将请求记录和�
 
 ## 报告安全问题
 
-如果当前 GitHub 仓库启用了 **Private vulnerability reporting**，请通过仓库的 Security 页面提交私密报告，并尽量提供受影响版本、复现步骤、影响范围和安全的最小复现材料。
+本仓库已启用 **Private vulnerability reporting**，请通过 [私密漏洞报告入口](https://github.com/LuyuTeaRoom/PelicanSentinel/security/advisories/new) 提交报告，并尽量提供受影响版本、复现步骤、影响范围和安全的最小复现材料。
 
 如果私密报告入口不可用，请只创建一个不含漏洞细节、凭据、API key、原始响应或用户历史的公开 issue，说明需要维护者提供私下联系渠道。当前项目没有公开的安全邮箱，也没有承诺响应或修复时限；请不要猜测或发布联系人地址。
 
