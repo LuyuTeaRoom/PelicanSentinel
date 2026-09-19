@@ -9,13 +9,13 @@ import plistlib
 import shutil
 
 ROOT_FILES = (
-    '.gitignore', 'Package.swift', 'README.md', 'LICENSE',
+    '.gitignore', 'Package.swift', 'README.md', 'README.zh-CN.md', 'LICENSE',
     'CONTRIBUTING.md', 'SECURITY.md', 'CHANGELOG.md',
 )
 PUBLIC_DOCS = (
     'docs/ARCHITECTURE.md', 'docs/CODEXBAR_REFERENCE.md',
     'docs/VALIDATION.md', 'docs/RELEASING.md', 'docs/ASSETS.md',
-    'docs/images/menu-history.png',
+    'docs/images/menu-history.png', 'docs/images/menu-history-en.png',
 )
 SCRIPTS = (
     'scripts/build-app.sh', 'scripts/test.sh', 'scripts/make-icon.swift',
