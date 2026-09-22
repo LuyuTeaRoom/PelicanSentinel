@@ -25,7 +25,7 @@ The goal is to notice changes in model intelligence over time. Today, the app sc
 
 <img src="docs/images/menu-history-en.png" width="400" alt="Pelican Sentinel menu with a large image, four recent requests, generation button, and schedule controls">
 
-*Native UI screenshot using self-check fixtures, not actual model output. Select a history row to change the large image; use its arrow to open the corresponding SVG.*
+*Native UI rendered from actual local history in English. The latest request started on September 22, 2026 at 08:40 and completed at 08:41 (UTC+08:00), requesting `gpt-6-astra` through Codex. Select a history row to change the large image; use its arrow to open the corresponding SVG.*
 
 ## What you get
 
